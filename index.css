@@ -1,0 +1,252 @@
+/*  RESET  */
+
+*,
+*:before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*   GENERAL STYLES   */
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.2rem;
+  position: relative;
+  min-height: 100%;
+  background-color: rgb(255, 253, 255);
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+nav,
+main,
+footer {
+  display: grid;
+
+  place-content: center;
+  grid-template-columns: 100%;
+  text-align: center;
+}
+
+header {
+  position: sticky;
+  background-color: rgb(30, 41, 59);
+  color: whitesmoke;
+  text-align: center;
+}
+
+header {
+  top: 0;
+  color: rgb(0, 234, 255);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: rgb(210, 202, 218);
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+nav a:hover {
+  background-color: rgba(89, 27, 245, 0.511);
+  padding: 0.6rem 0.5rem;
+  color: aliceblue;
+  border-style: none;
+  border-radius: 12px;
+}
+
+.header__icon {
+  margin: 0.2rem 0;
+  padding: 0.2rem;
+  font-size: 1rem;
+}
+
+.header__img {
+  margin: auto;
+  height: 2.5rem;
+  width: 4.2rem;
+}
+
+main{
+  background-color: whitesmoke;
+}
+
+footer {
+  position: absolute;
+  background-color: #1e293b;
+  color: whitesmoke;
+  text-align: center;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  min-height: 3rem;
+}
+
+/* MAIN */
+.hero {
+  width: 100%;
+}
+
+.hero p{
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.hero__div {
+  padding: 2rem;
+}
+
+/* Service Section*/
+
+.services{
+  width: 100%;
+  display: flex;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.services__div{
+  margin: 1rem;
+}
+
+/*  CONTACT US PAGE */
+
+.container {
+  background-color: white;
+  width: 60%;
+  padding: 1rem 1.5rem;
+  background-color: rgb(237, 223, 251);
+  margin: 3rem auto;
+  margin-bottom: 5rem;
+  border: 1px solid rgba(30, 41, 59, 0.01);
+  border-radius: 10px;
+  box-shadow: 20px 30px 25px rgba(30, 41, 59, 0.2);
+}
+
+.container h1 {
+  font-size: 2rem;
+  color: #2e3436;
+}
+
+.container p {
+  color: #2e3436;
+  font-weight: 400;
+}
+
+.container form {
+  width: 100%;
+  margin: 30px auto 0 auto;
+}
+
+.row {
+  width: 90%;
+  margin: auto;
+  display: grid;
+ 
+  grid-gap: 1.2rem 2rem;
+}
+
+.column {
+  margin: auto 0;
+}
+
+.column label {
+  display: flex;
+  justify-content: left;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+textarea,
+input {
+  width: 100%;
+  font-weight: 400;
+  padding: 0.5rem 0.6rem;
+  border-radius: 5px;
+  border: 1.2px solid #1e293b;
+  margin-top: 0.5rem;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #1a65dd;
+}
+
+button {
+  margin: 2rem;
+  border: none;
+  padding: 10px 20px;
+  background: linear-gradient(130deg, #6f6df4, #4c46f5);
+  cursor: pointer;
+}
+
+.submitbtn{
+   margin-left: 0;
+}
+
+.msg{
+  width: 100%;
+  margin: auto;
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+  background-color: #01482c;
+  position: fixed;
+  
+}
+
+@media screen and (max-width: 576px) {
+  .header__icon {
+    display: none;
+  }
+  header {
+    min-height: 3rem;
+  }
+  .container{
+    width: 85%;
+  }
+  input {
+    width: 100%;
+  }
+  .container h1, .hero h1 {
+    font-size: 1.3rem;
+  }
+  .container p, .hero p {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width:681px) and (max-width:900px){
+  .container{
+    width: 80%;
+  }
+  
+}
